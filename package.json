@@ -1,0 +1,32 @@
+{
+  "name": "Frontend",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "sass": "^1.29.0"
+  },
+  "alias": {
+    "leaflet": {
+      "global": "L"
+    }
+  },
+  "scripts": {
+    "prebuildyarn": "rm -rv dist",
+    "buildyarn": "yarn js && yarn css",
+    "build-parcel": "",
+    "css": "sass input.scss dist/output.css",
+    "precss": "echo vamos a compilar el sass",
+    "js": "babel . --out-dir dist --ignore node_modules",
+    "build": "cross-env NODE_ENV=production parcel build 'index.html' --dist-dir dist --no-source-maps",
+    "postbuildp": "cp -nrv templates/* ../static",
+    "poststartp": "cp -nrv templates/* ../static",
+    "prebuild": "rm -fr .parcel-cache dist || true",
+    "prestart": "rm -fr .parcel-cache dist || true",
+    "start": "cross-env NODE_ENV=development parcel 'index.html' --dist-dir dist --no-autoinstall --no-source-maps"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "parcel": "^2.0.0-nightly.453"
+  }
+}
