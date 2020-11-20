@@ -14,16 +14,15 @@
   "scripts": {
     "prebuildyarn": "rm -rv dist",
     "buildyarn": "yarn js && yarn css",
-    "build-parcel": "",
     "css": "sass input.scss dist/output.css",
     "precss": "echo vamos a compilar el sass",
     "js": "babel . --out-dir dist --ignore node_modules",
-    "build": "cross-env NODE_ENV=production parcel build 'index.html' --dist-dir dist --no-source-maps",
+    "build": "cross-env NODE_ENV=production parcel build 'index2.html' --dist-dir prod --public-url ./ --no-source-maps",
     "postbuildp": "cp -nrv templates/* ../static",
     "poststartp": "cp -nrv templates/* ../static",
-    "prebuild": "rm -fr .parcel-cache dist || true",
-    "prestart": "rm -fr .parcel-cache dist || true",
-    "start": "cross-env NODE_ENV=development parcel 'index.html' --dist-dir dist --no-autoinstall --no-source-maps"
+    "prebuild": "rm -fr .parcel-cache prod || true",
+    "prestart": "rm -fr .parcel-cache dev || true",
+    "start": "cross-env NODE_ENV=development parcel 'index.html' --dist-dir dev --no-autoinstall --no-source-maps"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",

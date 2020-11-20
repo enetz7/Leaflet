@@ -1,11 +1,9 @@
 <html>
     <head>
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin=""/>
+        <script src="55c3e0f79799ea77d0ac3277557c7577"></script>
+        <link rel="stylesheet" href="4f162e911b4d27a858d73747253bc9ec" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
         
-        <link rel="stylesheet" href="input.scss">
+        <link rel="stylesheet" href="8a8ba8a27755840f4d2af105eb1d1617">
     </head>
     <body>
         <header class="dark">
@@ -28,7 +26,7 @@
         </footer>
 
         
-        <script src="script.js">
+        <script src="1f1133b458b75cda324b462973a81d6e" data-parcel-key="e2c9e1269d01670953b5252c842ca111">
         </script>
     </body>
 </html>
